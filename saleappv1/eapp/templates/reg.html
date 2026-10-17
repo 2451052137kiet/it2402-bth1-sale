@@ -1,0 +1,22 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Đăng ký{% endblock %}
+
+{% block content %}
+<h1 class="text-center text-danger">ĐĂNG KÝ NGƯỜI DÙNG</h1>
+<form action="/action_page.php">
+    <div class="mb-3 mt-3">
+        <label for="username" class="form-label">Tên tài khoản:</label>
+        <input type="text" class="form-control" id="username" placeholder="Tên tài khoản" name="username">
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Mật khẩu:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Mật khẩu" name="pwd">
+    </div>
+    <div class="mb-3">
+        <label for="repwd" class="form-label">Xác nhận mật khẩu:</label>
+        <input type="password" class="form-control" id="repwd" placeholder="Xác nhận mật khẩu" name="pwd">
+    </div>
+    <button type="submit" class="btn btn-primary">Đăng ký</button>
+</form>
+{% endblock %}
